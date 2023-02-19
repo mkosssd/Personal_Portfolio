@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Saira Condensed', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+#header {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(162, 17, 17);
+  top: 0;
+  z-index: 1;
+  position: fixed;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.5vw;
+  font-size: 4vh;
+  height: 100%;
+  padding-right: 50px;
+}
+
+nav a{
+  color:black;
+}
+nav a:hover{
+  opacity: 1.5;
+  transform: scale(1.2);
+}
+#welcome-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.834);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-section h1 {
+  color: azure;
+  font-size: 10vh;
+}
+#welcome-section p {
+  color: rgb(162, 17, 17);
+  font-size: 4vh;
+  font-style: italic;
+}
+#projects {
+  display: flex;
+  justify-content: center;
+  height: 200vh;
+  background-color: rgb(73, 45, 99);
+  flex-direction: column;
+  
+  
+}
+#h2 {
+  font-size: 8vh;
+  border-bottom: 2px solid black;
+  max-width: 650px;
+  position: relative;
+  top: -6vh;
+  margin: 0 auto;
+}
+#projs {
+  display: grid;
+  grid-template-columns: repeat(2,560px);
+  grid-template-rows: repeat(2,70vh);
+  align-content: space-between;
+  justify-content:space-evenly;
+
+}
+#projs img {
+  width: 100%;
+  height: 80%;
+}
+#projs p{
+  color:white;
+  background-color: black;
+  font-size: 4vh;
+  text-align: center;
+  
+}
+a{
+  text-decoration: none;
+}
+
+.project{
+  background-color: black;
+  
+}
+
+
+.handles a , i{
+  font-size:2.5vh;
+  width: 3.5vh;
+  color: white;
+  font-weight: 900;
+  margin: 5px;
+  
+}
+
+#contact h2{
+  font-size: 10vh;
+
+}
+#contact p{
+  font-size: 3vh;
+}
+#contact{
+  height: 100vh;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+}
+.handles{
+  gap: 2vw;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  
+}
+@media screen and (max-width: 1100px){
+  
+  #projs{
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(2,50vh);
+  /* align-content: space-between;
+  justify-content:space-evenly;   */
+  }
+}
+@media screen and (max-width: 650px){
+  html{
+    text-align: center;
+  }
+  #projs{
+    grid-template-columns: 300px;
+  }
+  #h2{
+    font-size: 4vh;
+  }
+  #projects{
+    height: 250vh;
+  }
+}
